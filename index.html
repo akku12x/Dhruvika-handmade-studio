@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhruvika Handmade Studio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff9f5;
+    color: #333;
+}
+
+header {
+    background: #155e55;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+nav {
+    background: #f5dfd2;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: #155e55;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 12px 0;
+}
+
+.price {
+    color: #155e55;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+button {
+    background: #155e55;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    background: #155e55;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dhruvika Handmade Studio ❤️</h1>
+    <p>Beautiful Handmade Products Made With Love</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Dhruvika Handmade Studio 🌸</h2>
+    <p style="text-align:center;">
+        Explore our beautiful handmade creations.
+    </p>
+</section>
+
+<section id="products">
+    <h2>Our Handmade Collection 🌷</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="bouquet.jpg" alt="Crochet Flower Bouquet">
+            <h3>Crochet Flower Bouquet</h3>
+            <p>Beautiful Handmade Flowers</p>
+            <p class="price">₹499</p>
+            <button onclick="order('Crochet Flower Bouquet',499)">
+                Order Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="blue.jpg" alt="Blue Poshak">
+            <h3>Blue Bhagwan Ji Poshak</h3>
+            <p>Beautiful Handmade Poshak</p>
+            <p class="price">₹299</p>
+            <button onclick="order('Blue Poshak',299)">
+                Order Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="yellow.jpg" alt="Yellow Poshak">
+            <h3>Yellow Bhagwan Ji Poshak</h3>
+            <p>Beautiful Handmade Poshak</p>
+            <p class="price">₹299</p>
+            <button onclick="order('Yellow Poshak',299)">
+                Order Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="pink.jpg" alt="Pink Poshak">
+            <h3>Pink Bhagwan Ji Poshak</h3>
+            <p>Beautiful Handmade Poshak</p>
+            <p class="price">₹299</p>
+            <button onclick="order('Pink Poshak',299)">
+                Order Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="white.jpg" alt="Cream Red Poshak">
+            <h3>Cream Red Bhagwan Ji Poshak</h3>
+            <p>Beautiful Handmade Poshak</p>
+            <p class="price">₹299</p>
+            <button onclick="order('Cream Red Poshak',299)">
+                Order Now
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    <h3>Dhruvika Handmade Studio</h3>
+    <p>Thank You For Visiting ❤️</p>
+    <p>Handmade With Love</p>
+</footer>
+
+<script>
+function order(name, price) {
+  const phone = "918719975926";
+  const message = "Hello, I want to order " + name + ". Price: Rs " + price;
+  window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(message));
+}
+</script>                                                                                                                                                                                         </body>                                                                                                                                                                                         </html>
